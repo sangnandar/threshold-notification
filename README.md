@@ -35,4 +35,4 @@ Get `botToken` from Telegram's [@BotFather](https://t.me/BotFather).
 None.
 
 # References
-[Telegram API](https://core.telegram.org/api)
+- [Telegram API](https://core.telegram.org/api)
