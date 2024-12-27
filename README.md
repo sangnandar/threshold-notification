@@ -12,7 +12,9 @@ In this example the script will notify users if cell `C1` hit 10, being `C1 = A1
 None.
 
 # Apps Script configuration
-Store these variables into Script Properties, **Apps Script -> Project Settings -> Script Properties**
+- Add `Change` trigger, **Apps Script -> Triggers**.
+
+- Store these variables into Script Properties, **Apps Script -> Project Settings -> Script Properties**.
 ```
 list = [
 	{
