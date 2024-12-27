@@ -10,9 +10,6 @@ In this example the script will notify users if cell `C1` hit 10, being `C1 = A1
 
 <div align="center"><img src="https://github.com/user-attachments/assets/ab6ae6be-d11b-464b-aede-06118f394f92" /></div>
 
-# Apps Script dependencies
-None.
-
 # Apps Script configuration
 - Add `Change` trigger, **Apps Script -> Triggers**.
 
@@ -31,6 +28,11 @@ list = [
 botToken = '...'
 ```
 Get `botToken` from Telegram's [@BotFather](https://t.me/BotFather).
+
+- If you implement `doPost` deploy the script as webapp and copy the webapp's url to be used as [webhook](https://core.telegram.org/bots/api#setwebhook).
+
+# Apps Script dependencies
+None.
 
 # References
 [Telegram API](https://core.telegram.org/api)
