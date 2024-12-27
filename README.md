@@ -1,7 +1,7 @@
 # Threshold Notification
 
 # Overview
-This is Google Apps Script to notify list of users if designated cell(s) in spreadsheet changed into certain values. The script will notify the users via Telegram. 
+This is Google Apps Script to notify list of users if designated cell(s) in spreadsheet changed into certain values. The script will notify the users via Telegram's bot.
 
 This use case is very useful when you have your staffs work on the spreadsheet and want to immediately notified if some calculations hit certain thresholds.
 
