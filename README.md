@@ -8,7 +8,7 @@ This use case is very useful when you have your staffs work on the spreadsheet a
 ## Sheets configuration
 In this example the script will notify users if cell `C1` hit 10, being `C1 = A1 + B1`.
 
-<span style="display: block; text-align: center;">![image](https://github.com/user-attachments/assets/ab6ae6be-d11b-464b-aede-06118f394f92)</span>
+<div align="center"><img src="https://github.com/user-attachments/assets/ab6ae6be-d11b-464b-aede-06118f394f92" /></div>
 
 ## Apps Script configuration
 
