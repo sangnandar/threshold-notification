@@ -37,13 +37,13 @@ function doPost(e)
  */
 function editTrigger(e)
 {
-  const condition = (
-    [1, 2].includes(e.range.getColumn()) && // A, B
-    e.range.getRow() === 1 &&
-    e.range.getSheet().getName() === 'Sheet1'
-  )
+  const sheet = e.range.getSheet();
+  const sheetName = sheet.getSheetName();
 
-  if (!condition) return;
+  if (!(
+    sheetName === 'Sheet1' &&
+    isAnyCellInRange(['A1', 'B1'], e.range)
+  )) return;
 
   const value = Number(
     e.source

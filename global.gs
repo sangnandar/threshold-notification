@@ -30,3 +30,28 @@ function sendMessageTo(id, message)
   };
   UrlFetchApp.fetch(url, options);
 }
+
+/**
+ * To work with edit trigger.
+ * @param {string[]} cells in A1Notation.
+ * @param {Range} range object.
+ * @returns {boolean}
+ */
+function isAnyCellInRange(cells, range)
+{
+  return cells.some(cellA1Notation => {
+    const cell = range.getSheet().getRange(cellA1Notation);
+    const cellRow = cell.getRow();
+    const cellCol = cell.getColumn();
+  
+    const rangeRowStart = range.getRow();
+    const rangeColStart = range.getColumn();
+    const rangeRowEnd = rangeRowStart + range.getNumRows() - 1;
+    const rangeColEnd = rangeColStart + range.getNumColumns() - 1;
+  
+    return (
+      cellRow >= rangeRowStart && cellRow <= rangeRowEnd &&
+      cellCol >= rangeColStart && cellCol <= rangeColEnd
+    );
+  });
+}
